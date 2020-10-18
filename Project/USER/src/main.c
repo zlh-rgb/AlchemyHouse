@@ -593,7 +593,7 @@ int main(void)
         sprintf(buffer, "1:%3d 2:%3d 3:%3d", AdcValue.adcValue1, AdcValue.adcValue2, AdcValue.adcValue3);
         oled_p6x8str(0, 1, buffer);
         sprintf(buffer, "4:%3d 5:%3d", AdcValue.adcValue4, AdcValue.adcValue5);
-        oled_p6x8str(0, 3, buffer);
+        oled_p6x8str(0, 2, buffer);
         sprintf(buffer, "%5d", LVelocity);
         oled_p6x8str(0, 5, buffer);
         
