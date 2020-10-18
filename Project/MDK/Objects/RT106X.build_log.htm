@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Zlh, 1, LIC=MPPLD-8AW5U-WF3I7-ED17N-12VWR-YELX9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Zlh\Desktop\flycar\AlchemyHouse\Project\MDK\RT106X.uvprojx
+Project File Date:  10/18/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nor_sdram_zf_dtcm_v5'
+compiling main.c...
+.\HARDWEAR\zlh_adc_get\zlh_adcGet.h(21): warning:  #1295-D: Deprecated declaration myAdcInit - give arg types
+  void myAdcInit();
+.\HARDWEAR\zlh_adc_get\zlh_adcGet.h(22): warning:  #1295-D: Deprecated declaration getAdcValue - give arg types
+  myAdcValue getAdcValue();
+.\HARDWEAR\zlh_dg_control\zlh_dgControl.h(5): warning:  #1295-D: Deprecated declaration dgInit - give arg types
+  void dgInit();
+.\HARDWEAR\zlh_elma\zlh_elma.h(5): warning:  #1295-D: Deprecated declaration elmaInit - give arg types
+  void elmaInit();
+.\HARDWEAR\zlh_encoder\zlh_Encoder.h(5): warning:  #1295-D: Deprecated declaration encoderInit - give arg types
+  void encoderInit();
+.\HARDWEAR\zlh_key\zlh_key.h(7): warning:  #1295-D: Deprecated declaration getKey - give arg types
+  void getKey();
+.\HARDWEAR\zlh_key\zlh_key.h(8): warning:  #1295-D: Deprecated declaration keyInit - give arg types
+  void keyInit();
+..\USER\src\main.c(161): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+              uart_putbuff(USART_1, uartBuffer, strlen(uartBuffer));
+..\USER\src\main.c(287): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          dgOffsetsum = dgOffsetFront + 0.3 * qulv + 0.2 * qulvDelta; //+0.04f*xielv;
+..\USER\src\main.c(287): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          dgOffsetsum = dgOffsetFront + 0.3 * qulv + 0.2 * qulvDelta; //+0.04f*xielv;
+..\USER\src\main.c(295): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          dgOffsetsum = dgOffsetFront + 0.3 * qulv + 0.2 * qulvDelta; //+0.04f*xielv;
+..\USER\src\main.c(295): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          dgOffsetsum = dgOffsetFront + 0.3 * qulv + 0.2 * qulvDelta; //+0.04f*xielv;
+..\USER\src\main.c(570): warning:  #223-D: function "checkTag_5ms" declared implicitly
+          if (checkTag_5ms())
+..\USER\src\main.c(577): warning:  #223-D: function "checkTag_50ms" declared implicitly
+          if (checkTag_50ms())
+..\USER\src\main.c: 14 warnings, 0 errors
+linking...
+Program Size: Code=68868 RO-data=10960 RW-data=168 ZI-data=107300  
+".\Objects\RT106X.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: NXP
+                http://mcuxpresso.nxp.com/cmsis_pack/repo/NXP.MIMXRT1064_DFP.12.2.0.pack
+                NXP.MIMXRT1064_DFP.12.2.0
+                Device Family Pack for MIMXRT1064
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_nor_sdram_zf_dtcm_v5
+  E:\Keil_v5\Arm\Packs\NXP\MIMXRT1064_DFP\12.2.0
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
